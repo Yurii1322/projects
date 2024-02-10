@@ -1,0 +1,3 @@
+"Using Terraform, deploy 2 instances that should be placed under a load balancer and with auto-scaling groups. On these instances, a web server should be installed that will display a greeting and its IP address (create a simple HTML file).
+
+Afterwards, verify that auto-scaling works: stress the servers (either by CPU or by the number of requests, it doesn't matter much) and check that a new instance with the same configured web server is indeed launched (you should see different IP addresses when accessing the load balancer and refreshing the page)."
