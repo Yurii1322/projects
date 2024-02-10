@@ -1,0 +1,7 @@
+helm install prometheus prometheus-community/kube-prometheus-stack
+kubectl apply -f nginx_config_map.yaml
+kubectl apply -f nginx_deployment.yaml 
+kubectl apply -f nginx_service.yaml 
+kubectl apply -f service_monitor.yaml
+kubectl port-forward svc/prometheus-operated 9090
+
