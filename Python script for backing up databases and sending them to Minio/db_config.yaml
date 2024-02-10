@@ -1,0 +1,8 @@
+servers:
+  - host:
+    user:
+    password: 
+    port: 
+    databases:
+      - database1
+      - database12

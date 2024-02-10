@@ -1,0 +1,8 @@
+There is a YAML file with a host and a list of databases. The task is to write a Python script that connects to the specified host, backs up these databases, and sends them to our Minio.
+
+yaml example:
+servers:
+  - url: postgresql.host
+    databases:
+      - database1
+      - database12
