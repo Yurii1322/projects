@@ -1,0 +1,33 @@
+---
+# tasks file for elasticsearch
+
+
+# Installing Elasticsearch
+
+- name: Installing Elasticsearch
+  apt:
+   name: elasticsearch
+
+
+# Replace default elasticsearch.yml
+
+- name: Replace default elasticsearch.yml
+  template:
+   src: elasticsearch.yml
+   dest: /etc/elasticsearch/elasticsearch.yml
+
+# Start Elasticsearch service
+
+- name: Starting Elasticsearch
+  service:
+   name: elasticsearch
+   state: started
+   enabled: yes
+
+# Xpack security configuration 
+
+- name: Including xpack security setup configuration
+  include: security/keystore.yml
+  
+
+
