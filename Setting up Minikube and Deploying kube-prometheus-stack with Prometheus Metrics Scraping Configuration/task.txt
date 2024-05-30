@@ -1,1 +1,1 @@
-Set up Minikube locally, then deploy kube-prometheus-stack on it (understand how it works, how it scrapes metrics). Afterwards, deploy a web server on the same Minikube instance and configure Prometheus to scrape metrics from it.
+Set up Minikube locally (change1), then deploy kube-prometheus-stack on it (understand how it works, how it scrapes metrics). Afterwards, deploy a web server on the same Minikube instance and configure Prometheus to scrape metrics from it.
